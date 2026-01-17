@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Calendar from './pages/Calendar';
@@ -99,7 +99,7 @@ function App() {
   }
 
   return (
-    <Router basename="/arizagablog">
+    <Router>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white dark:from-gray-950 dark:to-gray-900 flex flex-col transition-colors duration-300">
         <Navbar />
         <main className="flex-1">
