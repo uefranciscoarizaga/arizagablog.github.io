@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GraduationCap, Facebook, Twitter, Instagram, Mail, Phone, MapPin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -60,24 +61,24 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/" className="text-gray-300 hover:text-white transition-colors">
                   Inicio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/calendario" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/calendario" className="text-gray-300 hover:text-white transition-colors">
                   Calendario
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/eventos" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/eventos" className="text-gray-300 hover:text-white transition-colors">
                   Eventos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contacto" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/contacto" className="text-gray-300 hover:text-white transition-colors">
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
